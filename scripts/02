@@ -1,0 +1,5 @@
+#!/bin/sh
+apt-get update > /var/log/update_script.log
+apt-get upgrade -f -y >> /var/log/update_script.log
+#echo "0 4 * * 0 /home/vagrant/02" >> /root/crontab
+#crontab -u root ~/crontab
